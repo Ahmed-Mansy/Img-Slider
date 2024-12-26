@@ -1,0 +1,63 @@
+.item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.info {
+    
+    background-color: #f3d2bc;
+    position: absolute;
+    bottom: -40px;
+    width: 80%;
+    left: 10%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+#myImg
+{
+    overflow: hidden;
+}
+img
+{
+    transition: all 0.4s 0.2s ease-in-out;
+}
+.item:hover img
+{
+    transform: scale(1.1);
+}
+.item:hover .info {
+
+    opacity: 1;
+    bottom: 20px;
+}
+#boxContainer
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.54);
+}
+#innerBox
+{
+    width: 50%;
+    height: 550px;
+    background-image: url(../images/portfolio-1.jpg);
+    background-size: cover;
+}
+i{
+    font-size: 25px;
+    cursor: pointer;
+}
+#boxContainer #close:hover
+{
+color: red;
+}
+#boxContainer #prev:hover,#boxContainer #next:hover
+{
+color: #09c;
+}
